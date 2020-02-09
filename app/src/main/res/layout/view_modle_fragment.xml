@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="count"
+            type="Integer" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/showPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:id="@+id/clipLayout"
+            android:layout_width="350dp"
+            android:orientation="horizontal"
+            android:background="@color/color_red"
+            android:layout_height="200dp"/>
+        <TextView
+            android:id="@+id/textHHH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/clickAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:elevation="2dp"
+            android:text="添加数据"
+            android:textColor="@color/colorWhite"
+            tools:ignore="UnusedAttribute" />
+
+    </LinearLayout>
+
+</layout>

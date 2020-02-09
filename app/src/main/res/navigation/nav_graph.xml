@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_fragment"
+    tools:ignore="UnusedNavigation">
+
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.zqy.jetpack_demo.fragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment">
+
+        <action
+            android:id="@+id/action_home_fragment_to_room_fragment"
+            app:destination="@id/room_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_viewModleFragment"
+            app:destination="@id/viewModleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/room_fragment"
+        android:name="com.zqy.jetpack_demo.fragment.RoomFragment"
+        android:label="RoomFragment"
+        tools:layout="@layout/room_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/lifecycle_fragment"
+        android:name="com.zqy.jetpack_demo.fragment.LifecycleFragment"
+        android:label="RoomFragment"
+        tools:layout="@layout/lifecycle_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewModleFragment"
+        android:name="com.zqy.jetpack_demo.fragment.ViewModelFragment"
+        android:label="ViewModleFragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pagingFragment"
+        tools:layout="@layout/fragment_paging"
+        android:name="com.zqy.jetpack_demo.fragment.PagingFragment"
+        android:label="@string/string_paging"/>
+
+
+</navigation>

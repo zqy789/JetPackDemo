@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">JetPackFamily</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_room">Room 数据库</string>
+    <string name="string_lifecycler">生命周期页面</string>
+    <string name="string_home">首页</string>
+    <string name="string_my">我的</string>
+    <string name="string_memorandum">备忘录</string>
+    <string name="string_title">名称</string>
+    <string name="string_context">内容</string>
+    <string name="string_list_null">还没有记录信息，赶快去吧</string>
+    <string name="string_to_write">去记录</string>
+    <string name="string_delete_message">删除</string>
+    <string name="setting">设置</string>
+    <string name="about">关于</string>
+    <string name="app_introduction">这是App使用了jetpack组件完成的一个简陋的备忘录功能</string>
+    <string name="string_note">写笔记</string>
+    <string name="string_filter">(默认) 排序</string>
+    <string name="string_search">搜索</string>
+    <string name="string_update_time">编辑日期</string>
+    <string name="string_create_time">创建时间</string>
+    <string name="string_title_room">标题</string>
+    <string name="string_cancel">取消</string>
+    <string name="string_paging">分页</string>
+</resources>

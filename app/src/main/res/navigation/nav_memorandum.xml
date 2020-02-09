@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_memorandum"
+    app:startDestination="@id/roomFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/roomFragment"
+        android:name="com.zqy.jetpack_demo.fragment.RoomFragment"
+        android:label="@string/string_memorandum"
+        tools:layout="@layout/room_fragment" />
+
+
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.zqy.jetpack_demo.fragment.NoteFragment"
+        android:label="@string/string_note"
+        tools:layout="@layout/fragment_note" />
+</navigation>

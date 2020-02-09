@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_fragment_sample"
+    tools:ignore="UnusedNavigation">
+
+
+    <fragment
+        android:id="@+id/home_fragment_sample"
+        android:name="com.zqy.jetpack_demo.fragment.HomeFragment"
+        tools:layout="@layout/home_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/view_model_sample"
+        android:name="com.zqy.jetpack_demo.fragment.ViewModelFragment"
+        tools:layout="@layout/view_modle_fragment">
+
+    </fragment>
+</navigation>

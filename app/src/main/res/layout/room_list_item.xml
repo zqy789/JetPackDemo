@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingStart="10dp"
+    app:contentView="@+id/note_item_layout"
+    app:rightMenuView="@+id/room_item_delete">
+
+    <LinearLayout
+        android:id="@+id/note_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/room_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/app_name" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/room_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                tools:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/room_item_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:ems="@integer/config_navAnimTime"
+                android:maxLines="1"
+                android:textColor="@color/textColor"
+                tools:text="@string/app_name" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/room_item_delete"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/color_red"
+        android:text="@string/string_delete_message"
+        android:textColor="@color/colorWhite" />
+</com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout>
