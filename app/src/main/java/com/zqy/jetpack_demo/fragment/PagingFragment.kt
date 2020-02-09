@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.zqy.jetpack_demo.R
 import com.zqy.jetpack_demo.adapter.PagingSampleAdapter
+import com.zqy.jetpack_demo.entity.PagingSampleEntity
 import com.zqy.jetpack_demo.paging.PagingFactory
 import com.zqy.jetpack_demo.paging.PagingHelper
 import com.zqy.jetpack_demo.respository.PagingRepository
@@ -25,6 +26,8 @@ import kotlinx.coroutines.launch
  * @author zhangqiuyang
  */
 class PagingFragment : Fragment() {
+
+    private var pagingData: PagedList<PagingSampleEntity>? = null
 
     private val adapter by lazy {
         PagingSampleAdapter()
@@ -45,9 +48,24 @@ class PagingFragment : Fragment() {
             addItemDecoration(DividerItemDecoration(activity, LinearLayoutManager.VERTICAL))
             adapter = this@PagingFragment.adapter
         }
+
+        pagingSwipe.setColorSchemeResources(
+            R.color.colorPrimary,
+            R.color.color_8BC34A,
+            R.color.color_red
+        )
+
+        pagingSwipe.setOnRefreshListener {
+            adapter.submitList(pagingData)
+            pagingSwipe.isRefreshing = false
+        }
         activity?.let {
+            pagingSwipe.isRefreshing = true
+
             PagingHelper.init(PagingFactory()).observe(it, Observer { list ->
+                this.pagingData = list
                 adapter.submitList(list)
+                pagingSwipe.isRefreshing = false
             })
         }
     }

@@ -22,7 +22,7 @@ class NavigationActivity : AppCompatActivity(),
             R.id.navigationPage
         )
         navigationView.setupWithNavController(findNavController)
-        findNavController.addOnDestinationChangedListener { controller, destination, arguments ->
+        findNavController.addOnDestinationChangedListener { _, destination, _ ->
             println("NavigationActivity$destination")
         }
         navigationView.setOnNavigationItemSelectedListener(this)

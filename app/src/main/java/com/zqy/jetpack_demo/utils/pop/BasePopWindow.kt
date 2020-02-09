@@ -1,8 +1,6 @@
 package com.zqy.jetpack_demo.utils.pop
 
-import android.view.View
 import android.widget.PopupWindow
-import com.zqy.jetpack_demo.BaseApp
 
 class BasePopWindow :PopupWindow(){
 

@@ -4,7 +4,7 @@
     package="com.zqy.jetpack_demo">
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:name="BaseApp"
+        android:name=".base.BaseApp"
         android:allowBackup="true"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"

@@ -9,7 +9,7 @@ import com.zqy.jetpack_demo.R
  */
 object Const {
 
-    const val KT_ARMOR = R.string.app_name
+    const val KT_ARMOR = "${R.string.app_name}"
 
     const val MESSAGE_EMPTY = "message is Empty"
 

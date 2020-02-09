@@ -1,4 +1,4 @@
-package com.zqy.jetpack_demo
+package com.zqy.jetpack_demo.base
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

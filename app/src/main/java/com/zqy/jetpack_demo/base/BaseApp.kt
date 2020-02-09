@@ -1,4 +1,4 @@
-package com.zqy.jetpack_demo
+package com.zqy.jetpack_demo.base
 
 import android.app.Application
 import com.zhan.mvp.ext.Toasts
